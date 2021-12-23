@@ -1,10 +1,10 @@
-package com.dilip.imperative;
+package com.dilip;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.dilip.imperative.Gender.FEMALE;
-import static com.dilip.imperative.Gender.MALE;
+import static com.dilip.GenderEnum.FEMALE;
+import static com.dilip.GenderEnum.MALE;
 
 
 public class Filtering {
@@ -20,7 +20,6 @@ public class Filtering {
         );
 
         //filter females from list
-
         System.out.println("Imperative Method");
         List<Person> females=new ArrayList<>();
         for(Person person:people){
@@ -44,9 +43,9 @@ public class Filtering {
 
     static class Person{
         private final String name;
-        private final Gender gender;
+        private final GenderEnum gender;
 
-        public Person(String name, Gender gender) {
+        public Person(String name, GenderEnum gender) {
             this.name = name;
             this.gender = gender;
         }

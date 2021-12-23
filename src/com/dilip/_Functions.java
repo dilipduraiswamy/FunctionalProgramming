@@ -2,14 +2,16 @@ package com.dilip;
 
 import java.util.function.Function;
 
-public class FunctionExample {
+public class _Functions {
 
     public static void main(String[] args) {
 
+        //static method
         int increment1=incrementByOne(0);
         int increment2=incrementByOneFunction.apply(0);
         System.out.println(increment1);
         System.out.println(increment2);
+
         int multiply1=multiplyBy10Function.apply(increment2);
         System.out.println(multiply1);
 
