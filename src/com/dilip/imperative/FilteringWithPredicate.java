@@ -2,11 +2,12 @@ package com.dilip.imperative;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
-import static com.dilip.imperative.Main.Gender.FEMALE;
-import static com.dilip.imperative.Main.Gender.MALE;
+import static com.dilip.imperative.Gender.FEMALE;
+import static com.dilip.imperative.Gender.MALE;
 
-public class Main {
+public class FilteringWithPredicate {
 
     public static void main(String[] args) {
 
@@ -34,8 +35,11 @@ public class Main {
         }
 
         System.out.println("Declarative Method");
+        //predicate takes one argument and return boolean
+        //https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html
+        Predicate<Person> personPredicate = person -> FEMALE.equals(person.gender);
         people.stream()
-                .filter(person->FEMALE.equals(person.gender))
+                .filter(personPredicate)
                 .forEach(System.out::println);
 
 
@@ -59,7 +63,5 @@ public class Main {
         }
     }
 
-    static enum Gender{
-        MALE,FEMALE
-    }
+
 }
