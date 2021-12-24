@@ -4,12 +4,12 @@ import com.dilip.dto.GenderEnum;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 import static com.dilip.dto.GenderEnum.FEMALE;
 import static com.dilip.dto.GenderEnum.MALE;
 
-
-public class Filtering {
+public class FilteringWithPredicateExample {
 
     public static void main(String[] args) {
 
@@ -36,8 +36,11 @@ public class Filtering {
         }
 
         System.out.println("Declarative Method");
+        //predicate takes one argument and return boolean
+        //https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html
+        Predicate<Person> personPredicate = person -> FEMALE.equals(person.gender);
         people.stream()
-                .filter(person->FEMALE.equals(person.gender))
+                .filter(personPredicate)
                 .forEach(System.out::println);
 
 

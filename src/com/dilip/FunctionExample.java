@@ -2,7 +2,7 @@ package com.dilip;
 
 import java.util.function.Function;
 
-public class _Functions {
+public class FunctionExample {
 
     public static void main(String[] args) {
 
