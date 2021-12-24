@@ -2,10 +2,10 @@ package com.dilip;
 
 import java.util.function.BiFunction;
 
+//https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html
 public class BiFunctionExample {
 
     public static void main(String[] args) {
-
 
         //normal function
         System.out.println(incrementByOneAndMultiply(2,10));
