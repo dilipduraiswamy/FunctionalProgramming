@@ -1,6 +1,7 @@
 package com.dilip;
 
 import com.dilip.dto.GenderEnum;
+import com.dilip.dto.Person;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,23 +44,7 @@ public class FilteringExample {
 
     }
 
-    static class Person{
-        private final String name;
-        private final GenderEnum gender;
 
-        public Person(String name, GenderEnum gender) {
-            this.name = name;
-            this.gender = gender;
-        }
-
-        @Override
-        public String toString() {
-            return "Person{" +
-                    "name='" + name + '\'' +
-                    ", gender=" + gender +
-                    '}';
-        }
-    }
 
 
 }
