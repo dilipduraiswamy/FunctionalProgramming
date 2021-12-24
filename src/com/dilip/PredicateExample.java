@@ -2,6 +2,7 @@ package com.dilip;
 
 import java.util.function.Predicate;
 
+//https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html
 public class PredicateExample {
 
     public static void main(String[] args) {
@@ -21,6 +22,7 @@ public class PredicateExample {
         System.out.println(checkPhoneNumberUsingPredicate.or(checkPhoneNumberContains3).test("7012845678"));
     }
 
+    //predicate take only input and gives output boolean back ..can be used in lamdbas
     static Predicate<String> checkPhoneNumberUsingPredicate=
             phoneNumber->
                     phoneNumber.contains("70")&&phoneNumber.length()==10;
