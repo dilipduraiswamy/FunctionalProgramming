@@ -1,5 +1,7 @@
 package com.dilip;
 
+import com.dilip.dto.Customer;
+
 import java.util.function.Consumer;
 
 //https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html
@@ -20,13 +22,5 @@ public class ConsumerExample {
         System.out.println("Welcome "+customer.customerName+" for registering phone number "+ customer.customerPhoneNumber);
     }
 
-    static class Customer{
-        private final String customerName;
-        private final String customerPhoneNumber;
 
-        public Customer(String customerName, String customerPhoneNumber) {
-            this.customerName = customerName;
-            this.customerPhoneNumber = customerPhoneNumber;
-        }
-    }
 }

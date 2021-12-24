@@ -1,11 +1,13 @@
 package com.dilip;
 
+import com.dilip.dto.GenderEnum;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-import static com.dilip.GenderEnum.FEMALE;
-import static com.dilip.GenderEnum.MALE;
+import static com.dilip.dto.GenderEnum.FEMALE;
+import static com.dilip.dto.GenderEnum.MALE;
 
 public class FilteringWithPredicate {
 
