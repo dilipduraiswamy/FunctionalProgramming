@@ -25,6 +25,9 @@ public class StreamsExample {
                .map(person -> person.gender)
                .collect(Collectors.toSet())
                .forEach(System.out::println);
+
+       boolean isFemalesAvailable=people.stream().anyMatch(person -> FEMALE.equals(person.gender));
+       System.out.println(isFemalesAvailable);
     }
 
 
