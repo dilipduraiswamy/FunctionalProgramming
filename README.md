@@ -12,7 +12,7 @@ Functional Programming Demo Preparation
 - Filtering
 - FilteringWithPredicate
 - Supplier
-- Validater
+- Validaters
 - CustomValidators
 - Callbacks
 - Optionals
